@@ -9,7 +9,7 @@ namespace WebApplication2
             app.Run(async (context) =>
             {
                 var response = context.Response;
-                response.ContentType= "text/html";
+                response.ContentType = "text/html";
                 await response.WriteAsync("<h2>Name:</h2><h3>Alexandr Kazanov</h3>\n" +
                     $"<h2>Date:</h2><h3>{DateTime.Now}</h3>\n" +
                     $"<h2>Environment:</h2><h3>{app.Environment.EnvironmentName}</h3>\n" +
